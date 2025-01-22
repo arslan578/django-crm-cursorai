@@ -29,7 +29,7 @@ class UserMiddleware:
 
 
 def activate_stored_messages_to_user(request: WSGIRequest, profile: UserProfile) -> None:
-    if profile.messages:
+    if profile and profile.messages:
         while profile.messages:
             msg = mark_safe(profile.messages.pop(0))    # NOQA
             level = profile.messages.pop(0)             # NOQA
@@ -39,7 +39,7 @@ def activate_stored_messages_to_user(request: WSGIRequest, profile: UserProfile)
 
 def check_user_language(profile: UserProfile) -> None:
     cur_language = get_language()
-    if cur_language != profile.language_code:
+    if profile and cur_language != profile.language_code:
         profile.language_code = cur_language
         profile.save(update_fields=['language_code'])
 

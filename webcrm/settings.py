@@ -266,7 +266,7 @@ MARK_PAYMENTS_THROUGH_REP = False
 SITE_TITLE = 'CRM'
 ADMIN_HEADER = "ADMIN"
 ADMIN_TITLE = "CRM Admin"
-INDEX_TITLE = _('Main Menu')
+INDEX_TITLE = _('Main Menu CursorAI')
 
 
 # This is copyright information. Please don't change it!
