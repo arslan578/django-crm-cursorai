@@ -174,7 +174,7 @@ SECURE_HSTS_PRELOAD = False
 
 # For more security, replace the url prefixes
 # with your own unique value.
-SECRET_CRM_PREFIX = '123/'
+SECRET_CRM_PREFIX = 'crm/'
 SECRET_ADMIN_PREFIX = '456-admin/'
 SECRET_LOGIN_PREFIX = '789-login/'
 
